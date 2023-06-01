@@ -32,7 +32,7 @@ section{ /*her section için geçerli ayarlamalar*/
 .section.title h2 :hover{ /*section title yazısının üzerine gelince rengi değişsin*/
     background-color: #24caac;
 }
-/* --------------- HEADER ---------------*/
+/*!   HEADER -------------------------------*/
 
 header{
     background: #0e0b0b; /*header arka plan rengini belirledim*/
@@ -65,4 +65,41 @@ header{
 .logo h2 a{ /*logonun içindeki h2 nin içindeki a tagına stil veriyorum*/
     color: #24caac;
     text-transform: uppercase;/*yazıların hepsini büyütür*/
+}
+/*!   ANASAYFA ------------------------------------------------*/
+.inner_anasayfa{
+    display: flex; /* içeriklerin iki karşıt uça yerleşmesini sağlar*/
+    align-items: center;/*iki divi ortalar*/
+    justify-content: space-between; /*içindekileri uyumlu bir şekilde ortalar*/
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+}
+.child_anasayfa{
+    flex-basis: 45%; /*responsive tasarımlarda bu kod mobil görünümünü daha iyi ayarlar*/
+}
+.child_anasayfa h1{
+    font-size: 50px;
+    color: #3aa7c2;
+}
+.span_child{
+    color: rgb(127, 52, 214);
+}
+.child_anasayfa p{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.btn{
+    background: #24caac;
+    padding: 12px 28px; /*butonun büyüklüğünü ve genişliğini ayarladım*/
+    border-radius: 20px; /* butonun kenarlarını yuvarlattım*/
+    color: #fff;
+    border: 1px solid #24caac;
+    font-weight: 700;
+    cursor: pointer;/**/
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: transparent; /*butonun üzerine gelince renk kaybolacak*/
+    letter-spacing: 2px; /*buton üzerine gelince buton 2px büyür*/
 }
