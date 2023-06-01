@@ -1,0 +1,68 @@
+html{ /* html kodunu ayarlıyoruz*/
+    scroll-behavior: smooth; /* geçişlerin yumuşak olması için*/
+}
+*{ /*Buradaki ayarlar bütün projede geçerli olacak*/
+    padding: 0; /* !sistemin otomatik olacak verdiği değil de bizim verdiğimiz ayarların geçerli olması için*/
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif; /*Çalışmamda yazı tipim */
+}
+img{ /*Her resim dosyam için geçerli genel ayarlamalar*/
+    width:100%;
+}
+section{ /*her section için geçerli ayarlamalar*/
+    padding: 100px 0; /*her section alttan ve üstten 100px olsun, soldan ve sağdan 0 */
+    background:#122e44; /*section arka plan rengi*/
+}
+.section.title{
+    margin-bottom: 30px; /*her section başlığı ile section arasındaki boşluk*/
+}
+.section.title h2{ /*section başlıkları için ayarlamalar*/
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .5s ease-in-out; /*bütün geçişlerin yavaş başlaması ve yavaş bitmesi için*/
+}
+.section.title h2 :hover{ /*section title yazısının üzerine gelince rengi değişsin*/
+    background-color: #24caac;
+}
+/* --------------- HEADER ---------------*/
+
+header{
+    background: #0e0b0b; /*header arka plan rengini belirledim*/
+    border-bottom: 1px solid rgba(238, 238, 238, 0.801);/*header çizgisi*/
+    position: fixed; /* header tagını olduğu yere sabitler*/
+    width: 100%;
+    z-index: 5;/*içeriğin header tagının altından geçmesi için*/
+}
+.navbar{ /*menü ve logo içinde*/
+    display: flex; /*!menü ve logonun yan yana pozisyona gelmesi için*/
+    justify-content: space-between; /*logonun solda menülerin de sağda olmasını sağlar ama menüler hala alt altadır*/
+    align-items: center; /*merkeze gelmeleri için*/
+    margin: 0 auto; 
+    width: 80%;/*ortalanır*/
+    padding: 10px 0;
+}
+.naw_linkleri{
+    display: flex;/* menüleri yan yana sıralar*/
+}
+.naw_linkleri li a{
+    margin-left: 15px; /*menülerin arasına boşluk koyar*/
+    color: #fff;
+    padding: 5px 15px; /*yukarıdan ve aşağıdan 5px boşluk,sağdan ve soldan 15px boşluk*/
+    border-radius: 5px;
+    transition: all .5s ease-in-out; /* üzerine gelince ne kadar sürede değişecek ve yavaşça*/
+}
+.naw_linkleri li a:hover{
+    background: #24caac; /*menü kutusunun üzerine gelince rengini değiştirdim*/
+}
+.logo h2 a{ /*logonun içindeki h2 nin içindeki a tagına stil veriyorum*/
+    color: #24caac;
+    text-transform: uppercase;/*yazıların hepsini büyütür*/
+}
