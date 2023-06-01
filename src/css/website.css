@@ -58,7 +58,7 @@ header{
     padding: 5px 15px; /*yukarıdan ve aşağıdan 5px boşluk,sağdan ve soldan 15px boşluk*/
     border-radius: 5px;
     transition: all .5s ease-in-out; /* üzerine gelince ne kadar sürede değişecek ve yavaşça*/
-}
+    }
 .naw_linkleri li a:hover{
     background: #24caac; /*menü kutusunun üzerine gelince rengini değiştirdim*/
 }
