@@ -140,3 +140,38 @@ header{
 .innerogrendiklerim_child p{
     font-size: 15px;
 }
+/*ÖĞRENDİKLERİM*/
+.inner_calisma{
+    display: flex;
+    flex-wrap: wrap;/*sayfayı küçültünce o alana sığması için*/
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.child_calisma{
+    flex-basis: 24%;
+    color: #fff;
+    padding: 20px 10px 20px 10px;
+    border: 1pc solid transparent;
+    transition: .3s;
+    border-radius: 25px;
+}
+.child_calisma:hover{
+    border: 1px solid #24caac;
+}
+.calisma_img img{
+    border-radius: 20px;
+}
+.child_calisma .detail{
+    display: flex;
+    justify-content: space-between
+}
+.child_calisma .detail ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+.child_calisma .detail ul{
+    color: gold;
+}
