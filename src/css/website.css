@@ -19,17 +19,17 @@ section{ /*her section için geçerli ayarlamalar*/
     padding: 100px 0; /*her section alttan ve üstten 100px olsun, soldan ve sağdan 0 */
     background:#122e44; /*section arka plan rengi*/
 }
-.section.title{
+.section_title{
     margin-bottom: 30px; /*her section başlığı ile section arasındaki boşluk*/
 }
-.section.title h2{ /*section başlıkları için ayarlamalar*/
+.section_title h2{ /*section başlıkları için ayarlamalar*/
     position: relative;
     text-align: center;
     color: #fff;
     font-size: 30px;
     transition: all .5s ease-in-out; /*bütün geçişlerin yavaş başlaması ve yavaş bitmesi için*/
 }
-.section.title h2 :hover{ /*section title yazısının üzerine gelince rengi değişsin*/
+.section_title h2:hover{ /*section title yazısının üzerine gelince rengi değişsin*/
     background-color: #24caac;
 }
 /*!   HEADER -------------------------------*/
@@ -96,10 +96,47 @@ header{
     color: #fff;
     border: 1px solid #24caac;
     font-weight: 700;
-    cursor: pointer;/**/
+    cursor: pointer;
     transition: all .3s ease;
 }
 .btn:hover{
     background: transparent; /*butonun üzerine gelince renk kaybolacak*/
     letter-spacing: 2px; /*buton üzerine gelince buton 2px büyür*/
+}
+.child_anasayfa img{/*fotoğrafın nasıl görünmesini istiyorsam burdan stil verdim*/
+    border-radius: 50px;
+    width: 500px;
+    height: 500px;
+}
+
+/*!   OGRENDİKLERİM ------------------------------------------------*/
+.innerogrendiklerim_child .icon img{ /*icon resim boyutlarını ayarladım*/
+    width: 90px;
+}
+.innerogrendiklerim{
+    display: flex; /*divleri yan yana getirir*/
+    align-items: center;/*divleri sayfada ortalar*/
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #fff;
+}
+.innerogrendiklerim_child{
+    flex-basis: 31%;/*divler arasında boşluk*/
+    color: #fff;
+    padding: 25px 20px;
+    background: rgba(55, 66, 80, 0.281);
+    border-radius: 50px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out; /*ease-in de yakışır*/
+}
+.innerogrendiklerim_child:hover{
+    border: 1px solid #24caac;
+}
+.innerogrendiklerim_child h3{
+    font-size: 20px;
+    margin: 5px 0;
+}
+.innerogrendiklerim_child p{
+    font-size: 15px;
 }
