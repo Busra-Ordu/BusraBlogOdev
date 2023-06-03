@@ -224,3 +224,33 @@ header{
 .sd_4{
     background: #cc4d93;
 }
+/*!İLHAM ALDIKLARIM ----------------*/
+.inner_ilham{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin:  0 auto;
+    color: #fff;
+}
+.child_ilham{
+    flex-basis: 46%;
+    margin-bottom: 30px
+}
+.ilham_img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.ilham_img img{
+    border-radius: 50%; /*resimleri yuvarlak yaptık*/
+}
+.ilham_hightligt{
+    color: #24caac;
+    margin: 10px 0;
+    display: inline-block;/*block öğe üzerinde bir genişlik ve yükseklik ayarlar */
+}
+.ilham_hightligt:hover{
+    text-decoration: underline;
+    color: #0fe91a;
+}
