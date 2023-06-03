@@ -109,7 +109,7 @@ header{
     height: 500px;
 }
 
-/*!   OGRENDİKLERİM ------------------------------------------------*/
+/*!   BENİ TANI ------------------------------------------------*/
 .innerogrendiklerim_child .icon img{ /*icon resim boyutlarını ayarladım*/
     width: 90px;
 }
@@ -174,4 +174,53 @@ header{
 }
 .child_calisma .detail ul{
     color: gold;
+}
+/*!Projelerim*/
+.inner_projeler{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.child_projeler{
+    flex-basis: 40%;
+}
+.child_projeler img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;/*verilen ölçüye göre boyutlandırıp kırpar*/
+    border-radius: 50%;
+}
+.child_projeler2{
+    flex-basis: 46%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.single_detail{
+    flex-basis: 48%;
+    padding: 40px 30px;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+}
+.single_detail:hover{
+    transform: scale(1.03);
+}
+.sd_1{
+    background: #ec5802;
+    margin-bottom: 20px;
+}
+.sd_2{
+    background: #327538;
+    margin-bottom: 20px;
+}
+.sd_3{
+    background: #1bdae0;
+}
+.sd_4{
+    background: #cc4d93;
 }
