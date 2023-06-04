@@ -254,3 +254,55 @@ header{
     text-decoration: underline;
     color: #0fe91a;
 }
+/*!İLETİŞİM İÇİN ---------------------*/
+.inner_contact{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+}
+.child_contact{
+    flex-basis: 45%;
+}
+.child_contact img{
+    border-radius: 30px;
+}
+.child_contact form{
+    padding: 50px 40px;
+    background: #326d75;
+    border-radius: 20px;
+}
+.child_contact form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #24292D;
+    border: none;
+    resize: none;
+    border-radius: 25px;
+    transition: .3s ease-in;
+}
+.child_contact form input,textarea:focus{/*üzerine tıklandığında ne olmasını seçiyorum*/
+    color: #fff;
+}
+.child_contact form input:focus{
+    letter-spacing: 1px;
+}
+.child_contact form textarea:focus{
+    letter-spacing: 1px;
+}
+.child_contact form input:last-child{/*formun en son elemanı buton için özellik verme*/
+    margin-bottom: 0;
+    background: #24caac;
+    border: 1px solid #24caac;
+    transition: .3s;
+}
+.child_contact form input:last-child:hover{
+    background: transparent;
+    color: #fff;
+}
+.child_contact form textarea{/*mesaj kısmını küçülttüm*/
+    height: 100px;
+}
