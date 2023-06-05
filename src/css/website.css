@@ -140,7 +140,7 @@ header{
 .innerogrendiklerim_child p{
     font-size: 15px;
 }
-/*ÖĞRENDİKLERİM*/
+/*!Çalışmalarım--------------------*/
 .inner_calisma{
     display: flex;
     flex-wrap: wrap;/*sayfayı küçültünce o alana sığması için*/
@@ -161,7 +161,7 @@ header{
     border: 1px solid #24caac;
 }
 .calisma_img img{
-    border-radius: 20px;
+    border-radius: 25px;
 }
 .child_calisma .detail{
     display: flex;
@@ -239,11 +239,11 @@ header{
     margin-bottom: 30px
 }
 .ilham_img{
-    width: 80px;
+    width: 90px;
     margin-bottom: 10px;
 }
 .ilham_img img{
-    border-radius: 50%; /*resimleri yuvarlak yaptık*/
+    border-radius: 70px; /*resimleri yuvarlak yaptık*/
 }
 .ilham_hightligt{
     color: #24caac;
